@@ -79,7 +79,25 @@ a.navbar-brand {
 }
 
 .logo-container {
-    height:15%;
+    height:30%;
+}
+
+.logo {
+    margin: 0 auto;
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.categories {
+    height:70%;
+}
+
+.category-list {
+    width: 80%;
+    margin-left: 12%;
 }
 /* Sidebar End */
 

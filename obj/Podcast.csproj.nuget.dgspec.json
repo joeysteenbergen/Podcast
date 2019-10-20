@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Joey\\Desktop\\Podcast\\Podcast.csproj": {}
+    "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Joey\\Desktop\\Podcast\\Podcast.csproj": {
+    "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Joey\\Desktop\\Podcast\\Podcast.csproj",
+        "projectUniqueName": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj",
         "projectName": "Podcast",
-        "projectPath": "C:\\Users\\Joey\\Desktop\\Podcast\\Podcast.csproj",
+        "projectPath": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj",
         "packagesPath": "C:\\Users\\Joey\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Joey\\Desktop\\Podcast\\obj\\",
+        "outputPath": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Joey\\AppData\\Roaming\\NuGet\\NuGet.Config",

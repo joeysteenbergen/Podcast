@@ -12999,23 +12999,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Gebruiker\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Joey\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\Podcast\\Podcast.csproj",
+      "projectUniqueName": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj",
       "projectName": "Podcast",
-      "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\Podcast\\Podcast.csproj",
-      "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\Podcast\\obj\\",
+      "projectPath": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj",
+      "packagesPath": "C:\\Users\\Joey\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Joey\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13066,10 +13062,16 @@
           }
         },
         "imports": [
-          "net461"
+          "net461",
+          "net462",
+          "net47",
+          "net471",
+          "net472",
+          "net48"
         ],
         "assetTargetFallback": true,
-        "warn": true
+        "warn": true,
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
       }
     }
   }

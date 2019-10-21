@@ -30,3 +30,5 @@ C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\obj\Debug\netcoreapp2.2\Podca
 C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\obj\Debug\netcoreapp2.2\Podcast.csproj.CopyComplete
 C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\obj\Debug\netcoreapp2.2\Razor\Views\Shared\_LayoutLogin.g.cshtml.cs
 C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\obj\Debug\netcoreapp2.2\Razor\Views\Login\Index.g.cshtml.cs
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastDAL.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastDAL.pdb

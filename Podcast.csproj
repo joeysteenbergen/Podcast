@@ -17,4 +17,9 @@
     <Folder Include="wwwroot\img\" />
   </ItemGroup>
 
+
+  <ItemGroup>
+    <ProjectReference Include="..\PodcastDAL\PodcastDAL.csproj" />
+  </ItemGroup>
+
 </Project>

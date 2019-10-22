@@ -10,7 +10,7 @@
       "NETCOREAPP",
       "NETCOREAPP2_2"
     ],
-    "languageVersion": "7.3",
+    "languageVersion": "",
     "platform": "",
     "allowUnsafe": false,
     "warningsAsErrors": false,
@@ -28,6 +28,7 @@
           "Microsoft.AspNetCore.Razor.Design": "2.2.0",
           "Microsoft.NETCore.App": "2.2.0",
           "Microsoft.VisualStudio.Web.CodeGeneration.Design": "2.2.3",
+          "PodcastBLL": "1.0.0",
           "PodcastDAL": "1.0.0"
         },
         "runtime": {
@@ -532,8 +533,20 @@
           }
         }
       },
+      "PodcastBLL/1.0.0": {
+        "dependencies": {
+          "PodcastDAL": "1.0.0"
+        },
+        "runtime": {
+          "PodcastBLL.dll": {}
+        },
+        "compile": {
+          "PodcastBLL.dll": {}
+        }
+      },
       "PodcastDAL/1.0.0": {
         "dependencies": {
+          "PodcastInterfaces": "1.0.0",
           "System.Data.SqlClient": "4.7.0"
         },
         "runtime": {
@@ -541,6 +554,14 @@
         },
         "compile": {
           "PodcastDAL.dll": {}
+        }
+      },
+      "PodcastInterfaces/1.0.0": {
+        "runtime": {
+          "PodcastInterfaces.dll": {}
+        },
+        "compile": {
+          "PodcastInterfaces.dll": {}
         }
       },
       "Microsoft.AspNet.WebApi.Client/5.2.6": {
@@ -3877,7 +3898,17 @@
       "path": "system.text.encoding.codepages/4.6.0",
       "hashPath": "system.text.encoding.codepages.4.6.0.nupkg.sha512"
     },
+    "PodcastBLL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "PodcastDAL/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PodcastInterfaces/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

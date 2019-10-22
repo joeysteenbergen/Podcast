@@ -4722,10 +4722,24 @@
           "lib/netstandard1.3/System.Xml.XPath.XDocument.dll": {}
         }
       },
+      "PodcastBLL/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "dependencies": {
+          "PodcastDAL": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/PodcastBLL.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PodcastBLL.dll": {}
+        }
+      },
       "PodcastDAL/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.0",
         "dependencies": {
+          "PodcastInterfaces": "1.0.0",
           "System.Data.SqlClient": "4.7.0"
         },
         "compile": {
@@ -4733,6 +4747,16 @@
         },
         "runtime": {
           "bin/placeholder/PodcastDAL.dll": {}
+        }
+      },
+      "PodcastInterfaces/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.0",
+        "compile": {
+          "bin/placeholder/PodcastInterfaces.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/PodcastInterfaces.dll": {}
         }
       }
     }
@@ -12983,10 +13007,20 @@
         "system.xml.xpath.xdocument.nuspec"
       ]
     },
+    "PodcastBLL/1.0.0": {
+      "type": "project",
+      "path": "../PodcastBLL/PodcastBLL.csproj",
+      "msbuildProject": "../PodcastBLL/PodcastBLL.csproj"
+    },
     "PodcastDAL/1.0.0": {
       "type": "project",
       "path": "../PodcastDAL/PodcastDAL.csproj",
       "msbuildProject": "../PodcastDAL/PodcastDAL.csproj"
+    },
+    "PodcastInterfaces/1.0.0": {
+      "type": "project",
+      "path": "../PodcastInterfaces/PodcastInterfaces.csproj",
+      "msbuildProject": "../PodcastInterfaces/PodcastInterfaces.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -12995,23 +13029,28 @@
       "Microsoft.AspNetCore.Razor.Design >= 2.2.0",
       "Microsoft.NETCore.App >= 2.2.0",
       "Microsoft.VisualStudio.Web.CodeGeneration.Design >= 2.2.3",
+      "PodcastBLL >= 1.0.0",
       "PodcastDAL >= 1.0.0"
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Joey\\.nuget\\packages\\": {}
+    "C:\\Users\\Gebruiker\\.nuget\\packages\\": {},
+    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj",
+      "projectUniqueName": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\Podcast\\Podcast.csproj",
       "projectName": "Podcast",
-      "projectPath": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\Podcast.csproj",
-      "packagesPath": "C:\\Users\\Joey\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Joey\\Desktop\\PodcastGit\\Podcast\\obj\\",
+      "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\Podcast\\Podcast.csproj",
+      "packagesPath": "C:\\Users\\Gebruiker\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\Podcast\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+      ],
       "configFilePaths": [
-        "C:\\Users\\Joey\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Gebruiker\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -13024,6 +13063,9 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
+            "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\PodcastBLL\\PodcastBLL.csproj": {
+              "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\PodcastBLL\\PodcastBLL.csproj"
+            },
             "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\PodcastDAL\\PodcastDAL.csproj": {
               "projectPath": "C:\\Users\\Gebruiker\\Desktop\\Podcast\\Podcast\\PodcastDAL\\PodcastDAL.csproj"
             }
@@ -13062,16 +13104,10 @@
           }
         },
         "imports": [
-          "net461",
-          "net462",
-          "net47",
-          "net471",
-          "net472",
-          "net48"
+          "net461"
         ],
         "assetTargetFallback": true,
-        "warn": true,
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.0.100\\RuntimeIdentifierGraph.json"
+        "warn": true
       }
     }
   }

@@ -32,3 +32,7 @@ C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\obj\Debug\netcoreapp2.2\Razor
 C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\obj\Debug\netcoreapp2.2\Razor\Views\Login\Index.g.cshtml.cs
 C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastDAL.dll
 C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastDAL.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastInterfaces.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastInterfaces.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastBLL.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\Podcast\bin\Debug\netcoreapp2.2\PodcastBLL.pdb

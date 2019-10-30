@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Podcast.Models;
 using PodcastBLL;
 using PodcastDAL;
 using PodcastInterfaces;
@@ -25,15 +26,15 @@ namespace Podcast.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(string username, string password)
+        public ActionResult Login(string loginUsername, string loginPassword)
         {
             var userLogic = new Userlogic(_personContext);
 
             foreach (var user in userLogic.GetAllUsers())
             {
-                if (user.Username == username && user.Password == password)
+                if (user.Username == loginUsername && user.Password == loginPassword)
                 {
-
+                    HttpContext.Session.SetString("Id", user.ID.ToString());
                     HttpContext.Session.SetString("Username", user.Username);
 
                     return RedirectToAction("Index", "Home");
@@ -41,15 +42,16 @@ namespace Podcast.Controllers
             }
 
             ModelState.AddModelError("LogOnError", "The username or password provided is incorrect.");
-            return View("Index");
+            return RedirectToAction("Index", "Home");
         }
 
         [HttpPost]
-        public ActionResult Register(string username, string password, string firstname, string lastname, DateTime dateOfBirth, string email)
+        public ActionResult Register(UserModel model)
         {
+            /*string registerUsername, string registerPassword, string firstname, string lastname, string dateOfBirth, string email*/
             var userLogic = new Userlogic(_personContext);
 
-            userLogic.AddUser(username, password, firstname, lastname, dateOfBirth, email, DateTime.Now);
+            userLogic.AddUser(model.Username, model.Password, model.Firstname, model.Lastname, model.DateOfCreation, model.Email, DateTime.Now.Date);
             return RedirectToAction("Index", "Home");
         }
     }

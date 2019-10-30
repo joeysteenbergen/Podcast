@@ -26,45 +26,45 @@
             </div>
             <div id="login-body-container" class="row">
                 <div id="Login" class="col-md-12" style="display:block;">
-                    <form class="offset-md-2 col-md-8">
+                    <form asp-action="Login" asp-controller="Login" method="POST" class="offset-md-2 col-md-8">
                         <div class="form-group">
                             <label for="LoginUsername">Gebruikersnaam</label>
-                            <input type="text" class="form-control" id="LoginUsername" placeholder="Gebruikersnaam">
+                            <input type="text" class="form-control" id="LoginUsername" name="loginUsername" placeholder="Gebruikersnaam">
                         </div>
                         <div class="form-group">
                             <label for="LoginPassword">Password</label>
-                            <input type="password" class="form-control" id="LoginPassword" placeholder="Wachtwoord">
+                            <input type="password" class="form-control" id="LoginPassword" name="loginPassword" placeholder="Wachtwoord">
                         </div>
-                        <button asp-action="Login" asp-controller="Login" type="submit" class="btn login-btn">Login</button>
+                        <button type="submit" class="btn login-btn">Login</button>
                     </form>
                 </div>
                 <div id="Register" class="col-md-12" style="display:none;">
-                    <form class="offset-md-2 col-md-8">
+                    <form asp-controller="Login" asp-action="Register" class="offset-md-2 col-md-8" method="post" >
                         <div class="form-group">
                             <label for="RegisterUsername">Gebruikersnaam</label>
-                            <input type="text" class="form-control" id="RegisterUsername" placeholder="Gebruikersnaam">
+                            <input type="text" class="form-control" id="RegisterUsername" name="registerUsername" placeholder="Gebruikersnaam">
                         </div>
                         <div class="form-group">
                             <label for="RegisterPassword">Password</label>
-                            <input type="password" class="form-control" id="RegisterPassword" placeholder="Wachtwoord">
+                            <input type="password" class="form-control" id="RegisterPassword" name="registerPassword" placeholder="Wachtwoord">
                         </div>
                         <div class="form-group">
                             <label for="Firstname">Voornaam</label>
-                            <input type="text" class="form-control" id="Firstname" placeholder="Voornaam">
+                            <input type="text" class="form-control" id="Firstname" name="firstname" placeholder="Voornaam">
                         </div>
                         <div class="form-group">
                             <label for="Lastname">Achternaam</label>
-                            <input type="text" class="form-control" id="Lastname" placeholder="Achternaam">
+                            <input type="text" class="form-control" id="Lastname" name="lastname" placeholder="Achternaam">
                         </div>
                         <div class="form-group">
-                            <label for="Date">Geboortedatum</label>
-                            <input type="date" class="form-control" id="Date" placeholder="Geboortedatum">
+                            <label for="DateOfBirth">Geboortedatum</label>
+                            <input type="date" class="form-control" id="DateOfBirth" name="dateOfBirth" placeholder="Geboortedatum">
                         </div>
                         <div class="form-group">
                             <label for="Email">Email</label>
-                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                            <input type="email" class="form-control" id="Email" name="email" placeholder="Email">
                         </div>
-                        <button asp-action="Register" asp-controller="Login" type="submit" class="btn login-btn">Registreer</button>
+                        <button type="submit" class="btn login-btn">Registreer</button>
                     </form>
                 </div>
             </div>

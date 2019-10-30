@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using PodcastBLL;
 using PodcastDAL;
+using PodcastInterfaces;
 
 namespace Podcast.Controllers
 {
@@ -24,13 +25,13 @@ namespace Podcast.Controllers
         }
 
         [HttpPost]
-        public ActionResult Login(string UsernameLogin, string PasswordLogin)
+        public ActionResult Login(string username, string password)
         {
             var userLogic = new Userlogic(_personContext);
 
             foreach (var user in userLogic.GetAllUsers())
             {
-                if (user.Username == UsernameLogin && user.Password == PasswordLogin)
+                if (user.Username == username && user.Password == password)
                 {
 
                     HttpContext.Session.SetString("Username", user.Username);
@@ -44,11 +45,11 @@ namespace Podcast.Controllers
         }
 
         [HttpPost]
-        public ActionResult Register(string username, string password, string firstname, string lastname, DateTime dateOfBirth, string email, DateTime creationDate)
+        public ActionResult Register(string username, string password, string firstname, string lastname, DateTime dateOfBirth, string email)
         {
             var userLogic = new Userlogic(_personContext);
 
-            userLogic.AddUser(username, password, firstname, lastname, dateOfBirth, email, creationDate);
+            userLogic.AddUser(username, password, firstname, lastname, dateOfBirth, email, DateTime.Now);
             return RedirectToAction("Index", "Home");
         }
     }

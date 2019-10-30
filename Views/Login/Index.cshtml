@@ -35,7 +35,7 @@
                             <label for="LoginPassword">Password</label>
                             <input type="password" class="form-control" id="LoginPassword" placeholder="Wachtwoord">
                         </div>
-                        <button type="submit" class="btn login-btn">Login</button>
+                        <button asp-action="Login" asp-controller="Login" type="submit" class="btn login-btn">Login</button>
                     </form>
                 </div>
                 <div id="Register" class="col-md-12" style="display:none;">
@@ -60,7 +60,11 @@
                             <label for="Date">Geboortedatum</label>
                             <input type="date" class="form-control" id="Date" placeholder="Geboortedatum">
                         </div>
-                        <button type="submit" class="btn login-btn">Login</button>
+                        <div class="form-group">
+                            <label for="Email">Email</label>
+                            <input type="email" class="form-control" id="Email" placeholder="Email">
+                        </div>
+                        <button asp-action="Register" asp-controller="Login" type="submit" class="btn login-btn">Registreer</button>
                     </form>
                 </div>
             </div>

@@ -11,6 +11,8 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using PodcastDAL;
+using PodcastDAL.Context;
+using PodcastDAL.Context.ContextInterface;
 
 namespace Podcast
 {
@@ -33,11 +35,21 @@ namespace Podcast
                 options.MinimumSameSitePolicy = SameSiteMode.None;
             });
 
+            services.AddDistributedMemoryCache();
+
+            services.AddSession(options =>
+            {
+                // Set a short timeout for easy testing.
+                options.IdleTimeout = TimeSpan.FromSeconds(10);
+                options.Cookie.HttpOnly = true;
+                // Make the session cookie essential
+                options.Cookie.IsEssential = true;
+            });
             services.AddSingleton<IConfiguration>(Configuration);
             services.AddScoped<IUserContext, UserContext>();
+            services.AddScoped<IPodcastContext, PodcastContext>();
+            services.AddScoped<IPlaylistContext, PlaylistContext>();
             services.AddTransient(_ => new DatabaseConnection(Configuration.GetConnectionString("DefaultConnection")));
-
-            services.AddSession();
 
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_2).AddControllersAsServices();
         }
@@ -59,6 +71,7 @@ namespace Podcast
             app.UseHttpsRedirection();
             app.UseStaticFiles();
             app.UseCookiePolicy();
+            app.UseSession();
 
             app.UseMvc(routes =>
             {

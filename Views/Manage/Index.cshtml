@@ -1,0 +1,15 @@
+﻿@model IEnumerable<PlaylistModel>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div>
+    <ul>
+        @foreach (var item in Model)
+        {
+            <li>@Html.DisplayFor(modelItem => item.Title)</li>
+        }
+    </ul>
+</div>
+

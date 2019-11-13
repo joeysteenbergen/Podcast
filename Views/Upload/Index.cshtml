@@ -1,0 +1,40 @@
+﻿
+@{
+    ViewData["Title"] = "View";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div class="row">
+    <div class="col-md-12">
+        <div id="uploadmenu" class="row">
+            <ul class="nav nav-tabs">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Podcast</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Playlist</a>
+                </li>
+            </ul>
+        </div>
+        <div id="podcast" class="row" style="display:block;">
+
+        </div>
+        <div id="playlist" class="row" style="display:none;">
+            <form asp-action="AddPlaylist" asp-controller="Upload" method="POST" class="offset-md-2 col-md-8">
+                <div class="form-group">
+                    <label for="PlaylistTitle">Titel</label>
+                    <input type="text" class="form-control" id="PlaylistTitle" name="PlaylistTitle" placeholder="Titel">
+                </div>
+                <div class="form-group">
+                    <label for="PlaylistDescription">Description</label>
+                    <input type="text" class="form-control" id="PlaylistDescription" name="PlaylistDescription" placeholder="Beschrijving">
+                </div>
+                <div class="form-group">
+                    <label for="PlaylistImage">Afbeelding</label>
+                    <input type="text" class="form-control" id="PlaylistImage" name="PlaylistImage" placeholder="Afbeelding">
+                </div>
+                <button type="submit" class="btn login-btn">Toevoegen</button>
+            </form>
+        </div>
+    </div>
+</div>

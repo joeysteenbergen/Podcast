@@ -1,4 +1,4 @@
-﻿
+﻿@model UploadModel
 @{
     ViewData["Title"] = "View";
     Layout = "~/Views/Shared/_Layout.cshtml";
@@ -6,35 +6,78 @@
 
 <div class="row">
     <div class="col-md-12">
-        <div id="uploadmenu" class="row">
-            <ul class="nav nav-tabs">
+        <div class="row">
+            <ul class="nav nav-tabs" id="manageTab" role="tablist">
                 <li class="nav-item">
-                    <a class="nav-link active" href="#">Podcast</a>
+                    <a class="nav-link active" id="podcast-tab" data-toggle="tab" href="#podcast" role="tab" aria-controls="podcast" aria-selected="true">Podcast</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Playlist</a>
+                    <a class="nav-link" id="playlist-tab" data-toggle="tab" href="#playlist" role="tab" aria-controls="playlist" aria-selected="false">Playlist</a>
                 </li>
             </ul>
         </div>
-        <div id="podcast" class="row" style="display:block;">
+        <div class="tab-content">
+            <div class="tab-pane active" id="podcast" role="tabpanel" aria-labelledby="podcast-tab">
+                @if (Model.Playlists.Count() > 0)
+                {
+                    <form asp-action="AddPodcast" asp-controller="Upload" method="POST" class="offset-md-2 col-md-8">
 
-        </div>
-        <div id="playlist" class="row" style="display:none;">
-            <form asp-action="AddPlaylist" asp-controller="Upload" method="POST" class="offset-md-2 col-md-8">
-                <div class="form-group">
-                    <label for="PlaylistTitle">Titel</label>
-                    <input type="text" class="form-control" id="PlaylistTitle" name="PlaylistTitle" placeholder="Titel">
-                </div>
-                <div class="form-group">
-                    <label for="PlaylistDescription">Description</label>
-                    <input type="text" class="form-control" id="PlaylistDescription" name="PlaylistDescription" placeholder="Beschrijving">
-                </div>
-                <div class="form-group">
-                    <label for="PlaylistImage">Afbeelding</label>
-                    <input type="text" class="form-control" id="PlaylistImage" name="PlaylistImage" placeholder="Afbeelding">
-                </div>
-                <button type="submit" class="btn login-btn">Toevoegen</button>
-            </form>
+                        <div class="form-group">
+                            <label for="PodcastPlaylist">Playlist</label>
+                            <select id="PodcastPlaylist">
+                                @foreach (var option in Model.Playlists)
+                                {
+                                    <option>@Html.DisplayFor(modelItem => option.Title)</option>
+                                }
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="PodcastTitle">Titel</label>
+                            <input id="PodcastTitle" type="text" name="PodcastTitle" placeholder="Titel" />
+                        </div>
+                        <div class="form-group">
+                            <label for="PodcastDescription">Beschrijving</label>
+                            <textarea id="PodcastDescription" name="PodcastDescription"></textarea>
+                        </div>
+                        <div class="form-group">
+                            <label for="PodcastAgeRestriction">Leeftijdsbeperking (18+)</label>
+                            <input id="PodcastAgeRestriction" type="checkbox" name="PodcastAgeRestriction" />
+                        </div>
+                        <div class="form-group">
+                            <label for="PodcastImage">Afbeelding</label>
+                            <input id="PodcastImage" type="file" name="PodcastImage" />
+                        </div>
+                        <div class="form-group">
+                            <label for="PodcastAudio">Audio-file</label>
+                            <input id="PodcastAudio" type="file" name="PodcastAudio" />
+                        </div>
+                    </form>
+                }
+                else
+                {
+                    <div>
+                        <h2>U heeft nog geen afspeellijst(en)</h2><br />
+                        <p>Ga naar "Playlist" om een afspeellijst toe te voegen</p>
+                    </div>
+                }
+            </div>
+            <div class="tab-pane" id="playlist" role="tabpanel" aria-labelledby="playlist-tab">
+                <form asp-action="AddPlaylist" asp-controller="Upload" method="POST" enctype="multipart/form-data" class="offset-md-2 col-md-8">
+                    <div class="form-group">
+                        <label for="PlaylistTitle">Titel</label>
+                        <input type="text" class="form-control" id="PlaylistTitle" name="PlaylistTitle" placeholder="Titel">
+                    </div>
+                    <div class="form-group">
+                        <label for="PlaylistDescription">Description</label>
+                        <input type="text" class="form-control" id="PlaylistDescription" name="PlaylistDescription" placeholder="Beschrijving">
+                    </div>
+                    <div class="form-group">
+                        <label for="PlaylistImage">Afbeelding</label>
+                        <input type="file" class="form-control" id="PlaylistImage" name="PlaylistImage" placeholder="Afbeelding">
+                    </div>
+                    <button type="submit" class="btn login-btn">Toevoegen</button>
+                </form>
+            </div>
         </div>
     </div>
 </div>

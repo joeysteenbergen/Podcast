@@ -11,3 +11,12 @@ $("#changeRegister").on("click", function () {
     document.getElementById("changeRegister").style.backgroundColor = "#9E9E9E";
     document.getElementById("changeLogin").style.backgroundColor = "#757575";
 });
+
+$(function () {
+    $('#podcast-tab').click(function () {
+        $('.nav-tabs a[href="#podcast"]').tab('show');
+    });
+    $('#playlist-tab').click(function () {
+        $('.nav-tabs a[href="#playlist"]').tab('show');
+    })
+})

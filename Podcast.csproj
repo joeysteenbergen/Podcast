@@ -14,7 +14,7 @@
 
 
   <ItemGroup>
-    <Folder Include="wwwroot\img\" />
+    <Folder Include="wwwroot\podcasts\" />
   </ItemGroup>
 
 

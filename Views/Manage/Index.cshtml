@@ -1,4 +1,4 @@
-﻿@model IEnumerable<PlaylistModel>
+﻿@model ManageModel
 
 @{
     ViewData["Title"] = "Index";
@@ -6,7 +6,7 @@
 }
 <div>
     <ul>
-        @foreach (var item in Model)
+        @foreach (var item in Model.Playlists)
         {
             <li>@Html.DisplayFor(modelItem => item.Title)</li>
         }

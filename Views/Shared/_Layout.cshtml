@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿@using Microsoft.AspNetCore.Http;
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -48,38 +49,35 @@
                 <div class="col-md-10">
                     <header>
                         <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow">
-                            <div class="flex-row">
-                                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                                        aria-expanded="false" aria-label="Toggle navigation">
-                                    <span class="navbar-toggler-icon"></span>
-                                </button>
-                                <div class="navbar-collapse collapse">
-                                    <ul class="navbar-nav flex-grow-1">
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-larea="" asp-controller="Upload" asp-action="Index">Upload</a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a class="nav-link" asp-area="" asp-controller="Manage" asp-action="Index">Beheren</a>
-                                        </li>
-                                    </ul>
-                                    <form>
-                                        <input class="form-control" type="search" placeholder="Search" aria-label="Search" />
-                                    </form>
-                                    <div class="d-flex justify-content-end">
-                                        <ul class="navbar-nav">
-                                            <li class="nav-item dropdown">
-                                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">@ViewData["Username"]</a>
-                                                <div class="dropdown-menu">
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Index">Account</a>
-                                                    <a class="dropdown-item" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
-                                                </div>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+                                    aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarText">
+                                <ul class="navbar-nav mr-auto">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Upload" asp-action="Index">Upload</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" asp-area="" asp-controller="Manage" asp-action="Index">Beheren</a>
+                                    </li>
+                                </ul>
+                                <form class="form-inline form-navbar">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                    <button class="btn btn-primary my-2 my-sm-0" type="submit">Search</button>
+                                </form>
+                                <ul class="navbar-nav">
+                                    <li class="nav-item dropdown">
+                                        <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">@Context.Session.GetString("Username")</a>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" asp-area="" asp-controller="Account" asp-action="Index">Account</a>
+                                            <a class="dropdown-item" asp-area="" asp-controller="Login" asp-action="Logout">Logout</a>
+                                        </div>
+                                    </li>
+                                </ul>
                             </div>
                         </nav>
                     </header>

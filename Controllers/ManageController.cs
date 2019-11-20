@@ -26,7 +26,7 @@ namespace Podcast.Controllers
         public IActionResult Index()
         {
             var uploadLogic = new Uploadlogic(_podcastContext, _playlistContext);
-            var userID = Convert.ToInt32(HttpContext.Session.GetInt32("UserID"));
+            int userID = (int)HttpContext.Session.GetInt32("UserID");
             var viewmodel = new ManageModel();
 
             var playlists = new List<PlaylistModel>();
@@ -56,7 +56,7 @@ namespace Podcast.Controllers
                 });
             }
 
-            return View();
+            return View(viewmodel);
         }
     }
 }

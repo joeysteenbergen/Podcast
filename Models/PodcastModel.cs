@@ -10,7 +10,7 @@ namespace Podcast.Models
         public string Playlist { get; set; }
         public string Title { get; set; }
         public string Description { get; set; }
-        public string Image { get; set; }
+        public byte[] Image { get; set; }
         public DateTime CreationDate { get; set; }
         public int AgeRestriction { get; set; }
         public string AudioPath { get; set; }

@@ -113,6 +113,10 @@ nav {
 .dropdown-item:hover {
     background-color:lightgrey;
 }
+
+.form-navbar {
+    margin:0 auto;
+}
 /* Header end*/
 
 /* Body Start */

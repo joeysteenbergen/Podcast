@@ -13,7 +13,6 @@ namespace Podcast.Controllers
     {
         public IActionResult Index()
         {
-            ViewData["Username"] = HttpContext.Session.GetString("Username");
             return View();
         }
     }

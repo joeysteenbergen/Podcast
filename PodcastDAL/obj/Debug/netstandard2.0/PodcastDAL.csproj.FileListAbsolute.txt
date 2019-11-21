@@ -1,0 +1,12 @@
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\bin\Debug\netstandard2.0\PodcastDAL.deps.json
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\bin\Debug\netstandard2.0\PodcastDAL.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\obj\Debug\netstandard2.0\PodcastDAL.csprojAssemblyReference.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\obj\Debug\netstandard2.0\PodcastDAL.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\obj\Debug\netstandard2.0\PodcastDAL.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\obj\Debug\netstandard2.0\PodcastDAL.AssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\bin\Debug\netstandard2.0\PodcastDAL.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\obj\Debug\netstandard2.0\PodcastDAL.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\obj\Debug\netstandard2.0\PodcastDAL.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\bin\Debug\netstandard2.0\PodcastInterfaces.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\bin\Debug\netstandard2.0\PodcastInterfaces.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastDAL\obj\Debug\netstandard2.0\PodcastDAL.csproj.CopyComplete

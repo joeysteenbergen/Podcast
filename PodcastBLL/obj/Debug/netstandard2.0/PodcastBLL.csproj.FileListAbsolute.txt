@@ -1,0 +1,14 @@
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\obj\Debug\netstandard2.0\PodcastBLL.csprojAssemblyReference.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\obj\Debug\netstandard2.0\PodcastBLL.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\obj\Debug\netstandard2.0\PodcastBLL.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\obj\Debug\netstandard2.0\PodcastBLL.AssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\bin\Debug\netstandard2.0\PodcastBLL.deps.json
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\bin\Debug\netstandard2.0\PodcastBLL.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\bin\Debug\netstandard2.0\PodcastBLL.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\bin\Debug\netstandard2.0\PodcastDAL.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\bin\Debug\netstandard2.0\PodcastInterfaces.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\bin\Debug\netstandard2.0\PodcastDAL.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\bin\Debug\netstandard2.0\PodcastInterfaces.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\obj\Debug\netstandard2.0\PodcastBLL.csproj.CopyComplete
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\obj\Debug\netstandard2.0\PodcastBLL.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastBLL\obj\Debug\netstandard2.0\PodcastBLL.pdb

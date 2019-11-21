@@ -1,0 +1,9 @@
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\bin\Debug\netstandard2.0\PodcastInterfaces.deps.json
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\bin\Debug\netstandard2.0\PodcastInterfaces.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\bin\Debug\netstandard2.0\PodcastInterfaces.pdb
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\obj\Debug\netstandard2.0\PodcastInterfaces.csprojAssemblyReference.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\obj\Debug\netstandard2.0\PodcastInterfaces.csproj.CoreCompileInputs.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\obj\Debug\netstandard2.0\PodcastInterfaces.AssemblyInfoInputs.cache
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\obj\Debug\netstandard2.0\PodcastInterfaces.AssemblyInfo.cs
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\obj\Debug\netstandard2.0\PodcastInterfaces.dll
+C:\Users\Gebruiker\Desktop\Podcast\Podcast\PodcastInterfaces\obj\Debug\netstandard2.0\PodcastInterfaces.pdb
